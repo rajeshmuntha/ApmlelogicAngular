@@ -1,0 +1,36 @@
+<app-navbar></app-navbar>
+
+<section class="cmgsn" style="vertical-align: middle;">
+          <div class="">
+            <button class="btn btn-outline-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom" (click)="Showprogressbar()">Click to Start</button> 
+          </div>
+</section>
+
+  <!-- Offcanvas content -->
+  <div class="offcanvas offcanvas-bottom"  data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+    <div class="row mx-2">
+        <div class="col-lg-1 col-md-1 col-sm-1 col-2 bg-primary">
+            <div class=" rocket_icon">
+                <i class="bi bi-rocket fs-3 pt-4"></i>
+            </div>
+        </div>
+        <div class="col-lg-10 col-md-10 col-sm-10 col-9 pt-3">
+            <span class="pb-2 " style="font-size: 12px;">Migrating Data to selected environment.</span> 
+              <div >  
+                <mat-progress-bar mode="determinate" [value]="progress"></mat-progress-bar>  
+                <span  [ngStyle]="{'left': progress + '%'}"></span>  
+              </div>  
+                
+              <div class="d-flex justify-content-end">  
+                <span class="completed_progress_bar">{{progress}}% completed </span>  
+              </div> 
+            <span id="status" style="font-size: 12px;"></span>
+        </div>
+        <div class="col-lg-1 col-md-1 col-sm-1 col-1 canvas-toggle-btn">
+            <button type="button" class="btn btn-primary canvas_toggle_btn" data-bs-dismiss="offcanvas" aria-label="Close"><i class="bi bi-x-lg"></i></button>
+        </div>
+      </div>  
+    </div>
+
+
+<app-footer></app-footer>

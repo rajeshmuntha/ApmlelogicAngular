@@ -1,0 +1,57 @@
+
+.cmgsn{
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  padding-top: 300px;
+  vertical-align: middle;
+}
+
+
+.offcanvas, .offcanvas-lg, .offcanvas-md, .offcanvas-sm, .offcanvas-xl, .offcanvas-xxl {
+  --bs-offcanvas-zindex: 1045;
+  --bs-offcanvas-width: 400px;
+  --bs-offcanvas-height: 10vh !important;
+}
+
+.offcanvas-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px !important;
+  /* padding: var(--bs-offcanvas-padding-y) var(--bs-offcanvas-padding-x); */
+}
+.rocket_icon{
+ padding-top: 12px;
+  height: 100vh;
+  text-align: center;
+  justify-content: center;
+  vertical-align: middle;
+  color: white;
+}
+.canvas_toggle_btn{
+  width: 60px;
+  height: 30px;
+  float: right;
+  margin-top: -25px;
+}
+
+.mat-progress-bar {    
+  display: block;    
+  height: 15px !important;    
+  overflow: hidden;    
+  position: relative;    
+  transition: opacity 250ms linear;    
+  width: 100%;    
+}    
+    
+.mat-progress-bar-buffer {    
+  background-color: #e9ecef !important;    
+}    
+    
+.mat-progress-bar-background {    
+  fill:#e9ecef !important;    
+}   
+
+
